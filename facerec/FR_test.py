@@ -1,31 +1,116 @@
-
-import pickle
-
-# coding: utf-8
-
-# # Fine-tuning a Pretrained Network for Style Recognition
-# 
-# In this example, we'll explore a common approach that is particularly useful in real-world applications: take a pre-trained Caffe network and fine-tune the parameters on your custom data.
-# 
-# The advantage of this approach is that, since pre-trained networks are learned on a large set of images, the intermediate layers capture the "semantics" of the general visual appearance. Think of it as a very powerful generic visual feature that you can treat as a black box. On top of that, only a relatively small amount of data is needed for good performance on the target task.
-
-# First, we will need to prepare the data. This involves the following parts:
-# (1) Get the ImageNet ilsvrc pretrained model with the provided shell scripts.
-# (2) Download a subset of the overall Flickr style dataset for this demo.
-# (3) Compile the downloaded Flickr dataset into a database that Caffe can then consume.
-
-# In[1]:
-
-caffe_root = '../'  # this file should be run from {caffe_root}/examples (otherwise change this line)
-
+import cv2
 import sys
-sys.path.insert(0, caffe_root + 'python')
-import caffe
+import time
+import normalizer
+import shutil
+import os
+#from __future__ import print_function
 
-caffe.set_device(0)
-caffe.set_mode_gpu()
 
-import numpy as np
-from pylab import *
-get_ipython().magic(u'matplotlib inline')
-import tempfile
+def onLayMessage(string,location,frame,color="white"):
+	if color == "white":
+		colorcode = (255,255,255)
+	elif color == "red":
+		colorcode = (0,0,255)
+	elif color == "blue":
+		colorcode = (255,0,0)
+	else:
+		print "onLayMessage:defaulting to white"
+		colorcode = (255,255,255)
+	if location == "bottom":
+		cv2.putText(frame, string, (300, 700), cv2.FONT_HERSHEY_SIMPLEX, 1.0, colorcode)
+	elif location == "topleft":
+		cv2.putText(frame, string, (5, 25), cv2.FONT_HERSHEY_SIMPLEX, 1.0, colorcode)
+	elif location == "topright":
+		cv2.putText(frame, string, (995, 25), cv2.FONT_HERSHEY_SIMPLEX, 1.0, colorcode)
+	elif location == "bottomleft":
+		cv2.putText(frame, string, (5, 700), cv2.FONT_HERSHEY_SIMPLEX, 1.0, colorcode)
+	elif location == "bottomright":
+		cv2.putText(frame, string, (995, 700), cv2.FONT_HERSHEY_SIMPLEX, 1.0, colorcode)
+	elif location == "top":
+		cv2.putText(frame, string, (500, 25), cv2.FONT_HERSHEY_SIMPLEX, 1.0, colorcode)
+	else:
+		print "Error with onLayMessage, unknown location: ",location
+
+
+
+def show_webcam(photos,duration):
+	TRAINSET = "lbpcascade_frontalface.xml"
+	DOWNSCALE = 4
+	webcam = cv2.VideoCapture(0)
+	cv2.namedWindow("test")
+	classifier = cv2.CascadeClassifier(TRAINSET)
+	images=[]
+
+	if webcam.isOpened(): # try to get the first frame
+		rval, frame = webcam.read()
+	else:
+		rval = False
+
+
+	n = 0
+	photos = int(photos)
+	duration = float(duration)
+	interval = duration/photos
+	test = False
+
+	while rval:
+	# detect faces and draw bounding boxes
+		minisize = (frame.shape[1]/DOWNSCALE,frame.shape[0]/DOWNSCALE)
+		miniframe = cv2.resize(frame, minisize)
+		faces = classifier.detectMultiScale(miniframe)
+		key = cv2.waitKey(20)
+
+		if (len(faces) > 0):
+			x, y, w, h = [ v*DOWNSCALE for v in faces[0] ]
+		else:
+			x, y, w, h = 0, 0, frame.shape[0], frame.shape[1]
+			#cv2.rectangle(frame, (x,y), (x+w,y+h), (0,0,255))
+
+		if not test:
+			starttime= time.time()
+			test = True
+
+		if test:
+			currtime = time.time()
+			timediff = currtime-starttime
+			if (timediff > (interval*n)):
+				roi = frame[y:y+h,x:x+w]
+				images.append(frame)
+				n+=1
+			if n >= photos:
+				break
+
+		cv2.imshow("test", frame)
+		# get next frame
+		rval, frame = webcam.read()
+
+	return images, 'test'
+			
+
+def store(images,name,normalize,option):
+	if os.path.isdir(option):
+		shutil.rmtree(option)
+	os.makedirs(option)
+
+	labels = open(option+'/'+'labels.txt','w+')
+	for image in images:
+		if normalize:
+			normalizer.normalize_and_store(image,option+"/"+name+"_"+str(time.time())+'.jpg')
+		else:
+			normalizer.store(image,option+"/"+name+"_"+str(time.time())+'.jpg')
+
+		labels.write(str(os.getcwd())+"/"+option+'/'+name+"_"+str(time.time())+'.jpg -1\n')
+
+def main(photos,duration,normalize):
+	images,option = show_webcam(photos,duration)
+	store(images,"test_img",normalize,option)
+
+
+main(10,5,True)
+
+
+
+
+
+
