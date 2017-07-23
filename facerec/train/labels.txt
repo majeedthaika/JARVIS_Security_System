@@ -1,114 +1,102 @@
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500729736.62.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500729737.75.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500729738.89.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500729740.03.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500729741.16.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500729742.3.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500729743.43.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500729744.56.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500729745.68.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500729746.82.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500729778.38.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500729779.53.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500729780.67.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500729781.82.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500729782.97.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500729784.11.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500729785.25.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500729786.38.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500729787.52.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500729788.65.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747373.12.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747374.24.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747375.36.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747376.45.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747377.53.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747378.61.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747379.7.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747380.78.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747381.88.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747382.98.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747394.21.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747395.32.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747396.42.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747397.5.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747410.35.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747411.46.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747412.55.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747413.63.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747414.72.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747415.8.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747416.87.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747418.03.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747419.68.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/John_1500747420.92.jpg 2
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747461.87.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747462.98.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747464.09.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747465.19.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747466.27.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747467.36.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747468.45.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747469.52.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747470.61.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747471.69.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747489.54.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747490.65.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747491.75.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747492.84.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747493.94.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747495.04.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747496.12.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747497.21.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747498.3.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Majeed_1500747499.37.jpg 1
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747537.71.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747538.78.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747539.85.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747540.97.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747542.08.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747543.18.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747544.28.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747545.37.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747546.46.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747547.54.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747557.49.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747558.61.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747559.72.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747560.81.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747561.9.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747562.98.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747564.08.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747565.17.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747566.28.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Pankaj_1500747567.36.jpg 0
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747582.52.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747583.63.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747584.73.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747585.82.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747586.97.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747588.05.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747589.15.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747590.23.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747591.31.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747592.4.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747602.26.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747603.37.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747604.47.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747605.55.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747606.64.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747607.72.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747608.81.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747609.89.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747610.97.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747612.05.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747622.11.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747623.22.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747624.33.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747625.41.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747626.5.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747627.58.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747628.69.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747629.81.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747631.01.jpg 3
-/Users/majeedthaika/Documents/Advanced Data Analysis/JARVIS_Security_System/facerec/train/Bossy_1500747632.12.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500729736.62.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500729737.75.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500729738.89.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500729740.03.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500729741.16.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500729742.3.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500729743.43.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500729744.56.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500729745.68.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500729778.38.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500729779.53.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500729780.67.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500729781.82.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500729782.97.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500729784.11.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500729785.25.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500729786.38.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500729787.52.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747373.12.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747374.24.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747375.36.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747376.45.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747377.53.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747378.61.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747379.7.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747380.78.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747381.88.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747394.21.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747395.32.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747396.42.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747410.35.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747411.46.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747412.55.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747413.63.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747414.72.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747415.8.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747416.87.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747418.03.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/John_1500747419.68.jpg 2
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747461.87.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747462.98.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747464.09.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747465.19.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747466.27.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747467.36.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747468.45.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747469.52.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747470.61.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747489.54.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747490.65.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747491.75.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747492.84.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747493.94.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747495.04.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747496.12.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747497.21.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Majeed_1500747498.3.jpg 1
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747537.71.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747538.78.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747539.85.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747540.97.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747542.08.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747543.18.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747544.28.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747545.37.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747546.46.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747557.49.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747558.61.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747559.72.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747560.81.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747561.9.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747562.98.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747564.08.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747565.17.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Pankaj_1500747566.28.jpg 0
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747582.52.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747583.63.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747584.73.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747585.82.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747586.97.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747588.05.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747589.15.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747590.23.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747591.31.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747602.26.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747603.37.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747604.47.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747605.55.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747606.64.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747607.72.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747608.81.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747609.89.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747610.97.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747622.11.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747623.22.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747624.33.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747625.41.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747626.5.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747627.58.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747628.69.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747629.81.jpg 3
+/home/cs00/Desktop/JARVIS_Security_System/facerec/train/Bossy_1500747631.01.jpg 3

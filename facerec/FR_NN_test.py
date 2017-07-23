@@ -1,7 +1,7 @@
 def test_NN(weights_file='trained_NN_weights.pickle'):
     import pickle
 
-    caffe_root = '/home/majeed/caffe/'  # this file should be run from {caffe_root}/examples (otherwise change this line)
+    caffe_root = '/home/cs00/caffe/'  # this file should be run from {caffe_root}/examples (otherwise change this line)
 
     import sys
     sys.path.insert(0, caffe_root + 'python')
@@ -40,8 +40,8 @@ def test_NN(weights_file='trained_NN_weights.pickle'):
     # os.system(caffe_root+"data/ilsvrc12/get_ilsvrc_aux.sh")
     # os.system(caffe_root+"scripts/download_model_binary.py models/bvlc_reference_caffenet")
 
-    weights = caffe_root+'models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel'
-    assert os.path.exists(weights)
+    # weights = caffe_root+'models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel'
+    # assert os.path.exists(weights)
 
     style_label_file = 'name_id.txt'
     style_labels = list(np.loadtxt(style_label_file, str, delimiter='\n'))

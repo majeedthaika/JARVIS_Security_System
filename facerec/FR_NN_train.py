@@ -1,7 +1,7 @@
 def train_NN(weights_file='trained_NN_weights.pickle'):
     import pickle
 
-    caffe_root = '/home/majeed/caffe/'  # this file should be run from {caffe_root}/examples (otherwise change this line)
+    caffe_root = '/home/cs00/caffe/'  # this file should be run from {caffe_root}/examples (otherwise change this line)
 
     import sys
     sys.path.insert(0, caffe_root + 'python')
@@ -40,8 +40,8 @@ def train_NN(weights_file='trained_NN_weights.pickle'):
     # os.system(caffe_root+"data/ilsvrc12/get_ilsvrc_aux.sh")
     # os.system(caffe_root+"scripts/download_model_binary.py models/bvlc_reference_caffenet")
 
-    weights = caffe_root+'models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel'
-    assert os.path.exists(weights)
+    # weights = caffe_root+'models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel'
+    # assert os.path.exists(weights)
 
     style_label_file = 'name_id.txt'
     style_labels = list(np.loadtxt(style_label_file, str, delimiter='\n'))
@@ -284,24 +284,23 @@ def train_NN(weights_file='trained_NN_weights.pickle'):
     niter = 200  # number of iterations to train
 
     # # Reset style_solver as before.
-    # style_solver_filename = solver(style_net(train=True))
-    # style_solver = caffe.get_solver(style_solver_filename)
-    # style_solver.net.copy_from(weights)
+    style_solver_filename = solver(style_net(train=True))
+    style_solver = caffe.get_solver(style_solver_filename)
+    style_solver.net.copy_from(weights)
 
     # # For reference, we also create a solver that isn't initialized from
     # # the pretrained ImageNet weights.
     # scratch_style_solver_filename = solver(style_net(train=True))
     # scratch_style_solver = caffe.get_solver(scratch_style_solver_filename)
 
-    # print 'Running solvers for %d iterations...' % niter
-    # solvers = [('pretrained', style_solver),
-    #            ('scratch', scratch_style_solver)]
-    # loss, acc, weights = run_solvers(niter, solvers)
-    # print 'Done.'
+    print 'Running solvers for %d iterations...' % niter
+    solvers = [('pretrained', style_solver)]
+    loss, acc, weights = run_solvers(niter, solvers)
+    print 'Done.'
 
     # train_loss, scratch_train_loss = loss['pretrained'], loss['scratch']
     # train_acc, scratch_train_acc = acc['pretrained'], acc['scratch']
-    # style_weights, scratch_style_weights = weights['pretrained'], weights['scratch']
+    style_weights = weights['pretrained']
 
     # # Delete solvers to save memory.
     # del style_solver, scratch_style_solver, solvers
