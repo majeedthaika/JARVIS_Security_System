@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "jarvis-speech-174208",
+  "private_key_id": "374e6fd7fda117b8942656e7fed4b0c4c850045e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDy2ShumG5kSkcl\nqu/lQOnOYjgEWcN2giXbMCuHVjhLz6vxoJXcZAPTEvKZ6+vb7MAB8UMu1KdR3VUa\nAL8YNNZk0YeewNyVTIlZY4BwkmJr2039GCyQPPcjeV7Hi5o6s3ALsGK6x0I73I8R\ndynvl2XsjXqnXDDrfj48SBp0TJ/E3eGYJZNS9zzywwan4yOW13/S9+7y9KboUc5W\n/dqyKgX1S6GmOm9SHAE74Co4g9qJ6AvVat2zp4gUQ7/ilATl8Nk1vSXjmdV0+ugx\nQ9vLakABrDXPkbEQCxEG/jT9ygiYw3TVGJBIzIrHJoY1Yz613RtHYEZC3AbDBWuo\nv234ASLjAgMBAAECggEAAZJ+DPbhdDtJP1/ZkU9vnF9XAj5smt7sPqKYUDdm+zyY\nOBcSELeoAtSjrzo9t1cVyrSJ59kLkZrt003dVyc5TxO23af09Qv5NnwgNTISwaS/\nKrwEcWXgrv2qwvoKU817hkv/OzGYimceaY8gr0QeoBG8MnDj/KJSO1jKYUb3y1Da\nF5F9Esx+19d1+IENB2nbUpfyxLT1dhs6/lhujJVLghdjyxJW3i9gxPaKoAGX1t6S\nncoDn6Th0uQdVyFEK1Z2bjbLXlWHfCBkl5IAQnc8xrYZtMp7A29Fq5baU25XY27C\nu9OvoF8c5PQplNbE84yGD4rBR5RRayIHWVUZrfceAQKBgQD6oZnGhuMjCNAmRPKT\ndoL/YqMEp022m4fxzZtiuaevpVc7Qdy+S5tG2+iDFL0gL/SiI+2Vln5DAP+AR/8s\nNv9DmtH72Q3fZBS5Aw+Hm10C2cn4XImNAowPuEd7TKHNhX8wvdvEgp2Q7jrYR74N\nWJ41L7PdPA0NN8Hj4E/lG6q4lwKBgQD4DOCY3p4xwVGDzeYS4pyBJn4D6VBbUnMH\nvgWX++kTSTNaLkCiDL7bJv9o6OsckzjF/S0OFeJOVFTpzXpdPDGXEvB3ZNIam+C+\nwXd4dvg+ZLfMVJ4RpVLlqMRRhVAu681qwMWeED1/QnkTwodUnRIg9Tb/ks4xptwi\nLfmEJpVFlQKBgDI5YgRrkWa65GNW27l7PUMKNBrBoAwg3Lwy9JlzFMxY+MMSLrcf\nlY08kjp6VG/3zDEVvA2G6+RndcvyIYtttfeJNd0fIO2MM67jkyAcnSXuGNAhUxsj\n0Idx6TknISF7SAKveTPG7OZXJwmiTs6D3KhR19xUpVTpwHv2vmvuAGcfAoGBALxF\nkeeV+P6M2+Et07Z72AxS+gzf9wUJpJO40CgWpUblJZwKRTZ6dBaFGBE50NJkkA/+\n5Uaup5GKgtTfCERiHsWrM2d719kofUJsN9Dwg+Vfrv3hMAT2td/o4/F4PW8PvV+M\np7IcY4EHJD0yRmObwJnRZYhAlk6rdqRevudmHaCtAoGAPGiRaZAobK86Ve9tea9W\n1a7AuMpgcdjzzSJq+7hkpRap58cp0+zBFYS591BR6Ub1cFK1J8dH9ebjCaWaYud4\noI1o/RDE5zT3bFEjJFOUSAqcvbISb6/Pwd7ZEY/1BK69MXJtCIMYz2N2JOFbem0d\n9t/ZUzSsvXWmnK1S+bVzL5E=\n-----END PRIVATE KEY-----\n",
+  "client_email": "jarvis-john@jarvis-speech-174208.iam.gserviceaccount.com",
+  "client_id": "110935729273011982084",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/jarvis-john%40jarvis-speech-174208.iam.gserviceaccount.com"
+}

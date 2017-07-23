@@ -7,4 +7,3 @@
 /home/cs00/Desktop/JARVIS_Security_System/facerec/test/test_img_1500731253.76.jpg -1
 /home/cs00/Desktop/JARVIS_Security_System/facerec/test/test_img_1500731254.91.jpg -1
 /home/cs00/Desktop/JARVIS_Security_System/facerec/test/test_img_1500731256.1.jpg -1
-/home/cs00/Desktop/JARVIS_Security_System/facerec/test/test_img_1500731257.23.jpg -1

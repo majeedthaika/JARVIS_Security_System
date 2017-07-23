@@ -105,7 +105,7 @@ def store(images,name,normalize,option):
 def main(photos,duration,normalize):
 	images,option = show_webcam(photos,duration)
 	store(images,"test_img",normalize,option)
-	return test_NN()
+	# return test_NN()
 
 print main(10,5,True)
 

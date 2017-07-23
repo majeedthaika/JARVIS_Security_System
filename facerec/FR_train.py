@@ -120,7 +120,7 @@ def main(name,photos,duration,normalize):
 	name_id = find_name_id(name)
 	images,option = show_webcam(photos,duration)
 	store(images,name,name_id,normalize,option)
-	train_NN()
+	# train_NN()
 
 main(sys.argv[1],10,5,True)
 
