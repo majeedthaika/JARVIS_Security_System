@@ -14,8 +14,7 @@
 
 3. the third phase is to verify user's password with JARVIS
     - <open app or google query>
-      - app: calendar, photo booth, and calculator
-      - query: search query
+      - app: calendar, photo booth, and calculator; query: any search query for google
 
 
 ## For Face Recognition:
