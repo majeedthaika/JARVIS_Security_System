@@ -1,5 +1,7 @@
 # JARVIS_Security_System
 
+## For Face Recognition:
+
 1. Go to facerec/ folder
 
 2. Run "sudo python FR_train.py <name>" to add new images to training set + retrain neural net
