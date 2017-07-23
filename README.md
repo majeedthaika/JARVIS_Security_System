@@ -5,7 +5,7 @@
 1. the first phase is to detect "hello jarvis"
 
 2. the second phase is to confirm with the user whether the face detected matches the user.
-    - JARVIS says: Are you <username>?
+    - JARVIS says: Hey "username"
     - user says: <yes or no>
     if yes, the user may proceed to password verification part, else, user remain here until the correct response shows
 
@@ -14,8 +14,12 @@
 
 3. the third phase is to verify user's password with JARVIS
     - <open app or google query>
-      - app: calendar, photo booth, and calculator; query: any search query for google
+      app: calendar, photo booth, and calculator; query: any search query for google
 
+
+## TRAIN (not in JARVIS):
+
+1. user type in their name and password while the JARVIS takes photos and retrain the Neural Network of the user for facial recognition
 
 ## For Face Recognition:
 
