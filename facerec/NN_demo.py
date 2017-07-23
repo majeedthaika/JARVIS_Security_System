@@ -391,6 +391,7 @@ predictions = []
 for batch_index in range(NUM_TEST_IMAGES):
     image = face_recog_net.blobs['data'].data[batch_index]
     predictions.append(top_prediction_style(face_recog_net, image))
+    disp_style_preds(face_recog_net, image)
 
 print most_common(predictions)
 
