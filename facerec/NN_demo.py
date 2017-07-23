@@ -379,7 +379,7 @@ face_recog_net = caffe.Net(style_net(train=False), weights, caffe.TEST)
 
 predictions = []
 for batch_index in range(NUM_TEST_IMAGES):
-    image = test_net.blobs['data'].data[batch_index]
+    image = face_recog_net.blobs['data'].data[batch_index]
     predictions.append(top_prediction_style(face_recog_net, image))
 
 print most_common(predictions)
