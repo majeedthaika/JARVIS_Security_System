@@ -15,3 +15,5 @@ b. Make sure the caffe_root path is properly set to your own caffe root file in 
 c. Make sure the labels.txt files in both train/ and test/ folder point to the correct absolute image path
 
 d. These files have NOT been tested yet!
+
+e. There is a bug where the last image is saved, but the label gets put to the labels.txt file
