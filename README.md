@@ -52,13 +52,13 @@ f. You can run "sudo python NN_demo.py" to see how the system should work once i
 
 ## For passcode via finger tracker:
 
-#Register
+##Register
 1. run python main.py with display.register(None, name), where name is name of user
 2. place your hand into all 9 red squares for the first 5 seconds
 3. enter your 4 digit by moving your finger to the boxes that correspond to your 4 digit password
 4. 4-digit password will save in login.csv
 
-#Authentication
+##Authentication
 1. run python main.py with display.authenticate(None, name), where name is name of user
 2. place your hand into all 9 red squares for the first 5 seconds
 3. enter your 4 digit by moving your finger to the boxes that correspond to your 4 digit password
