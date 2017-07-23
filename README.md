@@ -8,7 +8,7 @@
 
 NOTE:
 
-a. Make sure this facerec/ folder has "shape_predictor_68_face_landmarks.dat" file, otherwise download it
+a. Make sure this facerec/ folder has "shape_predictor_68_face_landmarks.dat" file, otherwise download it (http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2)
 
 b. Make sure the caffe_root path is properly set to your own caffe root file in FR_NN_train.py and FR_NN_test.py
 
