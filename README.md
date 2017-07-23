@@ -2,9 +2,9 @@
 
 1. Go to facerec/ folder
 
-2. Run "python FR_train.py <name>" to add new images to training set + retrain neural net
+2. Run "sudo python FR_train.py <name>" to add new images to training set + retrain neural net
 
-3. run "python FR_test.py" to see your predicted results
+3. run "sudo python FR_test.py" to see your predicted results
 
 NOTE:
 
