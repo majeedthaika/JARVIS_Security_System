@@ -374,13 +374,13 @@ weights = finetuned_weights['pretrained, end-to-end']
 
 def most_common(lst):
     return max(set(lst), key=lst.count)
-    
+
 def top_prediction(net, image, labels, k=1, name='ImageNet'):
     input_blob = net.blobs['data']
     net.blobs['data'].data[0, ...] = image
     probs = net.forward(start='conv1')['probs'][0]
-    top_k = (-probs).argsort()[:k]
-    return labels[top_k]
+    top_one = (-probs).argsort()[0]
+    return labels[top_one]
 
 def top_prediction_style(net, image):
     return top_prediction(net, image, style_labels, name='style')
