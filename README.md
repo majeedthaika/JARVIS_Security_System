@@ -1,5 +1,23 @@
 # JARVIS_Security_System
 
+## Main Skeleton:
+
+1. the first phase is to detect "hello jarvis"
+
+2. the second phase is to confirm with the user whether the face detected matches the user.
+    - JARVIS says: Are you <username>?
+    - user says: <yes or no>
+    if yes, the user may proceed to password verification part, else, user remain here until the correct response shows
+
+        password verification:
+        - user has to draw out a sequence of number on the screen
+
+3. the third phase is to verify user's password with JARVIS
+    - <open app or google query>
+      - app: calendar, photo booth, and calculator
+      - query: search query
+
+
 ## For Face Recognition:
 
 1. Go to facerec/ folder
@@ -21,3 +39,11 @@ d. These files have NOT been tested yet!
 e. There is a bug where the last image isn't saved, but the label gets put to the labels.txt file
 
 f. You can run "sudo python NN_demo.py" to see how the system should work once integrated properly.
+
+## For Speech Detection:
+
+1. run python speech_main.py
+
+2. JARVIS will response start hearing the user when the user speaks or if the room is loud enough. If the room is quiet, then JARVIS will not start hearing.
+
+    
