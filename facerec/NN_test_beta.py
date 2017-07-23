@@ -296,5 +296,5 @@ with open('trained_NN_weights.pickle', 'rb') as f:
         image = test_net.blobs['data'].data[batch_index]
         predictions.append(top_prediction_style(face_recog_net, image))
 
-    return most_common(predictions)
+    print most_common(predictions)
 
