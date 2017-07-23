@@ -39,8 +39,8 @@ import os
 # os.system(caffe_root+"data/ilsvrc12/get_ilsvrc_aux.sh")
 # os.system(caffe_root+"scripts/download_model_binary.py models/bvlc_reference_caffenet")
 
-# weights = caffe_root+'models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel'
-# assert os.path.exists(weights)
+weights = caffe_root+'models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel'
+assert os.path.exists(weights)
 
 style_label_file = 'name_id.txt'
 style_labels = list(np.loadtxt(style_label_file, str, delimiter='\n'))
@@ -170,17 +170,6 @@ def disp_style_preds(net, image):
     disp_preds(net, image, style_labels, name='style')
 
 
-def top_prediction(net, image, labels, k=1, name='ImageNet'):
-    input_blob = net.blobs['data']
-    net.blobs['data'].data[0, ...] = image
-    probs = net.forward(start='conv1')['probs'][0]
-    top_k = (-probs).argsort()[:k]
-    return labels[top_k]
-
-def top_prediction_style(net, image):
-    return top_prediction(net, image, style_labels, name='style')
-
-
 # ### 3. Training the style classifier
 # 
 # Now, we'll define a function `solver` to create our Caffe solvers, which are used to train the network (learn its weights).  In this function we'll set values for various parameters used for learning, display, and "snapshotting" -- see the inline comments for explanations of what they mean.  You may want to play with some of the learning parameters to see if you can improve on the results here!
@@ -284,17 +273,114 @@ def run_solvers(niter, solvers, disp_interval=10):
         s.net.save(weights[name])
     return loss, acc, weights
 
+
+# # Let's create and run solvers to train nets for the style recognition task.  We'll create two solvers -- one (`style_solver`) will have its train net initialized to the ImageNet-pretrained weights (this is done by the call to the `copy_from` method), and the other (`scratch_style_solver`) will start from a *randomly* initialized net.
+# # 
+# # During training, we should see that the ImageNet pretrained net is learning faster and attaining better accuracies than the scratch net.
+
+# # In[18]:
+
+niter = 200  # number of iterations to train
+
+# # Reset style_solver as before.
+style_solver_filename = solver(style_net(train=True))
+style_solver = caffe.get_solver(style_solver_filename)
+style_solver.net.copy_from(weights)
+
+# # For reference, we also create a solver that isn't initialized from
+# # the pretrained ImageNet weights.
+# scratch_style_solver_filename = solver(style_net(train=True))
+# scratch_style_solver = caffe.get_solver(scratch_style_solver_filename)
+
+print 'Running solvers for %d iterations...' % niter
+solvers = [('pretrained', style_solver)]
+loss, acc, weights = run_solvers(niter, solvers)
+print 'Done.'
+
+# train_loss, scratch_train_loss = loss['pretrained'], loss['scratch']
+# train_acc, scratch_train_acc = acc['pretrained'], acc['scratch']
+style_weights = weights['pretrained']
+
+# # Delete solvers to save memory.
+del style_solver, solvers
+
+# # Let's take a look at the testing accuracy after running 200 iterations of training. Note that we're classifying among 5 classes, giving chance accuracy of 20%. We expect both results to be better than chance accuracy (20%), and we further expect the result from training using the ImageNet pretraining initialization to be much better than the one from training from scratch. Let's see.
+
+# # In[21]:
+
+# caffe.Net(style_net(train=False), style_weights, caffe.TEST)
+
+
+# # In[22]:
+
+# def eval_style_net(weights, test_iters=10):
+#     test_net = caffe.Net(style_net(train=False), weights, caffe.TEST)
+#     accuracy = 0
+#     for it in xrange(test_iters):
+#         accuracy += test_net.forward()['acc']
+#     accuracy /= test_iters
+#     return test_net, accuracy
+
+
+# # In[23]:
+
+# test_net, accuracy = eval_style_net(style_weights, 1)
+# print 'Accuracy, trained from ImageNet initialization: %3.1f%%' % (100*accuracy, )
+# scratch_test_net, scratch_accuracy = eval_style_net(scratch_style_weights)
+# print 'Accuracy, trained from   random initialization: %3.1f%%' % (100*scratch_accuracy, )
+
+
+# # In[24]:
+
+# batch_index = 0
+# image = test_net.blobs['data'].data[batch_index]
+# plt.imshow(deprocess_net_image(image))
+# print 'actual label =', style_labels[int(test_net.blobs['label'].data[batch_index])]
+
+
+# # In[ ]:
+
+# disp_style_preds(test_net, image)
+
+
+# ### 4. End-to-end finetuning for style
+# 
+# Finally, we'll train both nets again, starting from the weights we just learned.  The only difference this time is that we'll be learning the weights "end-to-end" by turning on learning in *all* layers of the network, starting from the RGB `conv1` filters directly applied to the input image.  We pass the argument `learn_all=True` to the `style_net` function defined earlier in this notebook, which tells the function to apply a positive (non-zero) `lr_mult` value for all parameters.  Under the default, `learn_all=False`, all parameters in the pretrained layers (`conv1` through `fc7`) are frozen (`lr_mult = 0`), and we learn only the classifier layer `fc8_flickr`.
+# 
+# Note that both networks start at roughly the accuracy achieved at the end of the previous training session, and improve significantly with end-to-end training.  To be more scientific, we'd also want to follow the same additional training procedure *without* the end-to-end training, to ensure that our results aren't better simply because we trained for twice as long.  Feel free to try this yourself!
+
+# In[ ]:
+print "end-to-end"
+end_to_end_net = style_net(train=True, learn_all=True)
+
+# Set base_lr to 1e-3, the same as last time when learning only the classifier.
+# You may want to play around with different values of this or other
+# optimization parameters when fine-tuning.  For example, if learning diverges
+# (e.g., the loss gets very large or goes to infinity/NaN), you should try
+# decreasing base_lr (e.g., to 1e-4, then 1e-5, etc., until you find a value
+# for which learning does not diverge).
+base_lr = 0.001
+
+style_solver_filename = solver(end_to_end_net, base_lr=base_lr)
+style_solver = caffe.get_solver(style_solver_filename)
+style_solver.net.copy_from(style_weights)
+
+print 'Running solvers for %d iterations...' % niter
+solvers = [('pretrained, end-to-end', style_solver)]
+_, _, finetuned_weights = run_solvers(niter, solvers)
+print 'Done.'
+
+weights = finetuned_weights['pretrained, end-to-end']
+
 def most_common(lst):
     return max(set(lst), key=lst.count)
 
-with open('trained_NN_weights.pickle', 'rb') as f:
-    weights = pickle.load(f)
-    face_recog_net = caffe.Net(style_net(train=False), weights, caffe.TEST)
+face_recog_net = caffe.Net(style_net(train=False), weights, caffe.TEST)
 
-    predictions = []
-    for batch_index in range(len(NUM_TEST_IMAGES)):
-        image = test_net.blobs['data'].data[batch_index]
-        predictions.append(top_prediction_style(face_recog_net, image))
+predictions = []
+for batch_index in range(len(NUM_TEST_IMAGES)):
+    image = test_net.blobs['data'].data[batch_index]
+    predictions.append(top_prediction_style(face_recog_net, image))
 
-    print most_common(predictions)
+print most_common(predictions)
 
