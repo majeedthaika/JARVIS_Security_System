@@ -17,3 +17,5 @@ c. Make sure the labels.txt files in both train/ and test/ folder point to the c
 d. These files have NOT been tested yet!
 
 e. There is a bug where the last image isn't saved, but the label gets put to the labels.txt file
+
+f. You can run "NN_train_beta.py" and "NN_test_beta.py" to see how the system should work once integrated properly.
